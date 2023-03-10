@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <test parallel="methods" name="Log In Page Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.myTest.LogInTest">
+        <methods>
+          <include name="verifyLogInPageHeaderTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.myTest.LogInTest -->
+    </classes>
+  </test> <!-- Log In Page Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
